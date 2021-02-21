@@ -3,6 +3,9 @@
 html{
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+body {
+    
+}
 
 a {
     color: white;
@@ -31,4 +34,9 @@ a:hover{
     line-height: 20px;
     text-align: center;
     border-radius: 20px;
+}
+
+#sair {
+    margin-top: 550px;
+    text-align: center;
 }
