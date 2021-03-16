@@ -1,0 +1,28 @@
+body{
+    
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+h1{
+    margin-top: 2rem;
+    background-color: teal;
+    color: white;
+}
+#resultado{
+    width: auto;
+    height: 50px;
+    border-style: solid;
+    border-radius: 4px;
+    text-align: end;
+    border-color: teal;
+}
+.btn-primary{
+    width: 5rem;
+    height: 2rem;
+    background-color: teal;
+}
+
+.btn-primary:hover{
+    background-color: turquoise;
+}
+

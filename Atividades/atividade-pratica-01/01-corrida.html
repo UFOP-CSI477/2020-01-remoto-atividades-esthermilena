@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Calculadora</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+        <link rel="stylesheet" href="01-corrida.css">
+        <script text= "text/javascript" src ="01-corrida.js"></script>
+    
+    </head>
+
+    <body>
+
+        <div class="container">
+             <form name="formDados">
+                
+                <h1 class="text-center"> Informações sobre a corrida de carrinho de rolemã</h1>
+ 
+                    <div class="col-md-4">
+                        <label for="largada">Tempo de largada: </label>
+                        <input type="number" class="form-control" placeholder="Informe a posição de largada: " name="largada" id="largada" required />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="nome">Competidor(a): </label>
+                        <input type="text" class="form-control" placeholder="Informe o nome do competidor: " name="nome" id="nome" required autofocus />
+                    </div>
+
+                    <div class="col-md-4">
+                        <label for="tempo">Tempo(s)</label>
+                        <input type="number" name="tempo" id="tempo" class="form-control" placeholder="Informe o tempo (s)" required/>
+                    </div>
+    
+                    <br>
+
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-primary" onclick="cadastrarInformacoes()">Inserir informa do(a) competidor(a)</button>
+                    </div>
+    
+                    <div class="col-md-4">
+                        <button type="button" class="btn btn-danger" onclick="calculaResultado()">Resultado da Corrida</button>
+                    </div>
+
+
+                    <h2 class="text-center">Resultado</h2><hr>
+                    
+                    <div name="resultadoCorrida">
+                        <div class="col-md-12" id="tabela">
+                            <table class="table-responsive">
+                                <thead>
+
+                                    <tr id="infoTd">
+                                        <td>Largada</td>
+                                        <td>Nome</td>
+                                        <td>Tempo</td>
+                                        <td>Ganhador</td>
+                                    </tr>
+                                </thead>
+                            <tbody id="conteudo"></tbody>
+                            </table>
+                        </div>
+                    </div>
+                
+                </form>
+                </div>
+    </body>
+</html>
+    
