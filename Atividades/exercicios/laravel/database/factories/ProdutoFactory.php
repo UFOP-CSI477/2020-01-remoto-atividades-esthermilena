@@ -22,7 +22,7 @@ class ProdutoFactory extends Factory
     public function definition()
     {
         return [
-            'nome'=>$this->faker->word,
+            'nome'=>$this->faker->word(),
             'um'=>$this->faker->randomElement($array = array ('pç','kg','m'))
         ];
     }
